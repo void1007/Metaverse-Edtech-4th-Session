@@ -141,8 +141,8 @@ package Java0313;
 
 
 
-//class Animal{
-//    void cry(){
+//abstract class Animal{
+//    abstract void cry() ; { //->추상메서드
 //
 //    }
 //}
@@ -234,54 +234,54 @@ package Java0313;
 //}
 
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
-public class Java20240313Inheritance {
-    public static void main(String[] args) {
-        // 아래 배열중에 짝수만 출력
-//        int [] arr = new int [] {1, 2, 3, 4, 5};
-//        int i=0;
-//        for (i = 0;i< arr.length;i++){
-//            if (arr[i]%2==0){
-//                System.out.println(" " + arr[i]);
+//public class Java20240313Inheritance {
+//    public static void main(String[] args) {
+//        // 아래 배열중에 짝수만 출력
+////        int [] arr = new int [] {1, 2, 3, 4, 5};
+////        int i=0;
+////        for (i = 0;i< arr.length;i++){
+////            if (arr[i]%2==0){
+////                System.out.println(" " + arr[i]);
+////            }
+////        }
+//
+//        // 아래 문자열의 글자수를 카운트
+//        // 스페이스는 카운트하지 마시오
+//        String string = "The best of both worlds";
+//        int count = 0;
+//        for (int k=0;k<string.length(); k++){
+//            if (string.charAt(k) !=' ' ){
+//                count++;
 //            }
 //        }
-
-        // 아래 문자열의 글자수를 카운트
-        // 스페이스는 카운트하지 마시오
-        String string = "The best of both worlds";
-        int count = 0;
-        for (int k=0;k<string.length(); k++){
-            if (string.charAt(k) !=' ' ){
-                count++;
-            }
-        }
-        System.out.println("글자 수 : "+count);
-
-
-        //3
-        int [] arr = new int [] {1, 2, 3, 4, 5}; // --> 배열 arr 선언 및 입력
-
-        int n = 3; //변수 n의 입력
-
-        System.out.println("Original array: ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-
-        for(int i = 0; i < n; i++){
-            int j, last;
-
-            last = arr.length;  // 포인트 1
-            for(j = 0; j < arr.length-1; j++){
-                arr[j] = arr[j+1];
-            }
-            arr[j] = last;  // 포인트 2
-        }
-        System.out.println();
-
-        for(int i = 0; i< arr.length; i++){
-            System.out.print(arr[i] + " ");
-        }
-    }
-    }
+//        System.out.println("글자 수 : "+count);
+//
+//
+//        //3
+//        int [] arr = new int [] {1, 2, 3, 4, 5}; // --> 배열 arr 선언 및 입력
+//
+//        int n = 3; //변수 n의 입력
+//
+//        System.out.println("Original array: ");
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.print(arr[i] + " ");
+//        }
+//
+//        for(int i = 0; i < n; i++){
+//            int j, last;
+//
+//            last = arr.length;  // 포인트 1
+//            for(j = 0; j < arr.length-1; j++){
+//                arr[j] = arr[j+1];
+//            }
+//            arr[j] = last;  // 포인트 2
+//        }
+//        System.out.println();
+//
+//        for(int i = 0; i< arr.length; i++){
+//            System.out.print(arr[i] + " ");
+//        }
+//    }
+//    }
