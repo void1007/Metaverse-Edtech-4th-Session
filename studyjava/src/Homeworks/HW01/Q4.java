@@ -21,13 +21,31 @@ public class Q4 {
     public static void main(String[] args)
     {
         // 1~100사이의 임의의 값을 얻어서 answer에 저장한다.
-        int answer = (int)(Math.random() * 100) + 1;
+        int answer = (int)(Math.random() * 100) + 1; //1~100사이의 임의의 값을 얻어서 answer에 저장한다.
+
         int input = 0; // 사용자입력을 저장할 공간
+
         int count = 0; // 시도횟수를 세기위한 변수
 
         Scanner sc = new Scanner(System.in);
         do {
-            // 여기 코드를 작성
+            System.out.print("1부터 100 사이의 수를 입력하세요: ");
+            input = sc.nextInt();
+            count++; //시도 횟수 증가
+
+            //유저가 입력한 값에 따라 조건 분기
+            if (input > answer){
+                System.out.println("더 작은 수를 입력하세요.");
+            } else if (input < answer) {
+                System.out.println("더 큰 수를 입력하세요.");
+            } else {
+                System.out.println("정답입니다. ^ㅗ^");
+                break;
+            }
         } while(true); // 무한반복문
+
+        System.out.println("시도횟수는" + count + "번입니다."); //시도횟수 출력
+
+        sc.close(); //스캐너 닫기
     }
 }
