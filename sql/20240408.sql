@@ -1,5 +1,4 @@
--- CREATE DATABASE testDB DEFAULT CHARSET utf8mb4
--- collate utf8mb4_general_ci;
+ -- CREATE DATABASE testDB DEFAULT CHARSET utf8mb4 collate utf8mb4_general_ci;
 /* SQL (Structured Query Language) 
  : 구조화된 요청 언어
  : Database에서 필요한 기능을 실행시키기 위한 명령어 모음
