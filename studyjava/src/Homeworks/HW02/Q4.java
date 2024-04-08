@@ -106,7 +106,9 @@ public class Q4 {
         // 위에서 만든 List<MyCar>자료형의 컬렉션에서 필요한 정보만 사용하여
         // SimpleCarInfo[] 배열을 리턴하는 메서드(sendCarInfo)를 정의하시오
         SimpleCarInfo[] carArray = sendCarInfo(carList);
-        System.out.println(Arrays.toString(carArray));
+        for (SimpleCarInfo car : carArray){
+            System.out.println(car);
+        }
     }
 
     public static List<MyCar> makeList(String[] brands
@@ -114,7 +116,10 @@ public class Q4 {
         List<MyCar> myCarList = new ArrayList<>();
 
         // 여기 코드 작성 !!
-
+        for (int i = 0; i< brands.length; i++){
+            MyCar car = new MyCar(brands[i], models[i],years[i],colors[i]);
+            myCarList.add(car);
+        }
         return myCarList;
     }
 
@@ -122,6 +127,10 @@ public class Q4 {
         SimpleCarInfo[] cars = new SimpleCarInfo[carList.size()];
 
         // 여기 코드 작성 !!
+        for (int i = 0; i < carList.size(); i++){
+            MyCar  car = carList.get(i);
+            cars[i] = new SimpleCarInfo(car.model, car.color);
+        }
 
         return cars;
     }
