@@ -27,7 +27,7 @@ where 성별 = '남';
 
 -- 7.
 select 고객회사명,마일리지 from 고객
-where 마일리지 >= '1000';
+where 마일리지 >= 1000;
 
 -- 8.
 select 주문번호,주문수량 from 주문세부
@@ -44,23 +44,26 @@ where 성별 = '여' and 직위 = '사원';
 
 -- 11.
 select 제품명,단가 from 제품
-where 단가 >= '8000'
+where 단가 >= 8000
+order by 제품명 asc;
+
 
 -- 12.
 select 주문번호,주문수량 from 주문세부
-where 주문수량 >= '5';
+where 주문수량 >= 5;
 
 -- 13.
 select 생일,이름 from 사원
-where 생일 >= '1990-01-01';
+where 생일 > '1990-01-01';
 
 -- 14.
 select 이름,입사일 from 사원
+where 직위 = '사원'
 order by 입사일 desc
 limit 1;
 
 -- 15.
-select 고객번호,고객회사명 from 고객
+select 고객번호,고객회사명,도시 from 고객
 where 도시 = '대전광역시';
 
 
