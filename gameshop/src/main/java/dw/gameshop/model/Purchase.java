@@ -24,7 +24,6 @@ public class Purchase {
     @JoinColumn(name = "user_id")
     private User user;
     @Column(name = "purchase_time")
-    @JoinColumn(name = "purchase_time")
     private LocalDateTime purchaseTime;
 
     public Purchase() {

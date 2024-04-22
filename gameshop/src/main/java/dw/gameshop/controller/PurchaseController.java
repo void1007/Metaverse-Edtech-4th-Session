@@ -25,11 +25,14 @@ public class PurchaseController {
         return purchaseService.getAllPurchases();
     }
 
-    @GetMapping("/products/purchase/{userId}")
+    @GetMapping("/products/purchase/id/{userId}")
     public List<Purchase> getPurchaseListById(@PathVariable String userId){
         return purchaseService.getPurchaseListByUser(userId);
     }
-
-
-
+    @GetMapping("/products/purchase/name/{userName}")
+    public ResponseEntity<List<Purchase>> getPurchaseListByUserName(
+            @PathVariable String userName){
+        return new ResponseEntity<>(purchaseService.getPurchaseListByUserName(userName)
+                ,HttpStatus.OK);
+    }
 }

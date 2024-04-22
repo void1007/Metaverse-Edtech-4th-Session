@@ -1,0 +1,11 @@
+1.application.properties가 없다면 application.yml (야물)이 있는지 찾아봐라
+
+2.jpa를 안쓴는 경우 DAO라는 패키지를 쓸 수도 있다.
+
+3.대부분의 패키지는(Service,Model,Controller,Repository)를 쓰는 경우 가 많다.
+controller는 제일 마지막에 설정하는 것이 좋다.
+4.ex)
+service
+         XXXService.java(인터페이스)
+         impl
+               XXXServiceImpl.java(구현체)
