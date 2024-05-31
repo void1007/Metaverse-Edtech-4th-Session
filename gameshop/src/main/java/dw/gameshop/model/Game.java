@@ -8,15 +8,15 @@ public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "title",nullable = false,length = 100)
+    @Column(length = 100)
     private String title;
-    @Column(name = "genre",nullable =  false,length = 100)
+    @Column(length = 100)
     private String genre;
-    @Column(name = "price",nullable = false)
+    @Column
     private int price;
-    @Column(name = "image",nullable = false,length = 65535)
+    @Column(length = 65535)
     private String image;
-    @Column(name = "text",nullable = false,length = 65535)
+    @Column(length = 65535)
     private String text;
 
     public Game() {

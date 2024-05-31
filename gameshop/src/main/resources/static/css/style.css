@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins,'DNFBitBitv2';
+    font-family: 'DNFBitBitv2';
     text-decoration: none;
     color: inherit;
 }
@@ -26,9 +26,9 @@
 .title{
     width: 100%;
     height: 150px;
-    background-color: lightblue;
+    background-color: #161513;
     font-size: 2rem;
-    color: dodgerblue; 
+    color: #ffd70e; 
     text-align: center;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@
 
 .menu{
     width: 100%;
-    background-color: dodgerblue;
+    background-color: #d6232f;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -72,14 +72,14 @@
 }
 
 .menu > div:hover{
-    color: dodgerblue;
+    color: #d6232f;
     background-color: #fff;
     cursor: pointer;
 }
 
 .content{
     width: 100%;
-    background-color: khaki;
+    background-color: #161513;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -90,7 +90,7 @@
 .footer{
     width: 100%;
     height: 100px;
-    background-color: lightgray;
+    background-color: #d6232f;
 }
 
 .content p {
@@ -109,7 +109,7 @@
 
 .login{
     height: 300px;
-    background-color: khaki;
+    background-color: #161513;
     display: flex;
     align-items: center;
 }
@@ -130,19 +130,226 @@
     border-radius: 5px;
 }
 
+.signup-box{
+    width: 450px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 30px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+.btn{
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+
 .loginBtn{
     cursor: pointer;
     width: 100px;
     height: 40px;
-    background-color: dodgerblue;
+    background-color: #ffd70e;
+    color: #161513;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    line-height: 35px;
+    display: inline;
+}
+
+.loginBtn:hover{
+    background-color: #161513;
+    color: #ffd70e;
+}
+
+
+.logoutBtn{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #ffd70e;
+    color: #161513;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    line-height: 35px;
+    margin-top: 30px;
+}
+
+.logoutBtn:hover{
+    background-color: #161513;
+    color: #ffd70e;
+}
+
+.purchaseBtn{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #ffd70e;
+    color: #161513;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    line-height: 35px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.purchaseBtn:hover{
+    background-color: #d6232f;
     color: #fff;
+}
+
+th:hover{
+    background-color: #d6232f;
+    color: #fff;
+}
+
+.Back-btn{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #ffd70e;
+    color: #161513;
     text-align: center;
     font-weight: 700;
     border-radius: 5px;
     line-height: 35px;
 }
 
-.loginBtn:hover{
-    background-color: lightblue;
-    color: dodgerblue;
+.Back-btn:hover{
+    background-color: #161513;
+    color: #ffd70e;    
+}
+
+.process-btn{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #ffd70e;
+    color: #161513;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    line-height: 35px;
+}
+
+.user-box{
+    width: 450px;
+    margin-left: 30px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+
+.signupBtn{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #ffd70e;
+    color: #161513;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    line-height: 35px;
+}
+
+.signupBtn:hover{
+    background-color: #161513;
+    color: #ffd70e;
+}
+
+.ProceedBtn{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #ffd70e;
+    color: #161513;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    line-height: 35px;
+}
+
+.ProceedBtn:hover{
+    background-color: #161513;
+    color: #ffd70e;
+}
+
+.low-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    align-items: center;
+}
+
+
+.cartBtn{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #ffd70e;
+    color: #161513;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    line-height: 35px;
+    margin: 0 auto;
+}
+
+.cartBtn:hover{
+    background-color: #161513;
+    color: #ffd70e;
+}
+
+.cart{
+    width: 100%;
+    background-color: #161513;
+    padding: 20px;
+}
+
+.cart-table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.cart-table td{
+    text-align: center;
+}
+
+thead{
+    background-color: #ffd70e;
+    height: 50px;
+}
+
+.tr:nth-child(2n) td{
+    background-color: #eaeaed;
+}
+
+.imgtd{
+    width: 200px;
+}
+
+.totalPrice {
+    margin-left: 20px;
+    color: #ffd70e;
+    display: inline-block;
+}
+
+/*hidden 클래스 스타일은 파일의 제일 아래에 놓자!*/
+.hidden{
+    display: none;
 }
