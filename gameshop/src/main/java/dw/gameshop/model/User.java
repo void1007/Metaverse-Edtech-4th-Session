@@ -33,7 +33,6 @@ public class User implements UserDetails {
     @Column(name="created_at", updatable = false)
     private LocalDateTime createdAt;
 
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.singletonList(
@@ -48,6 +47,10 @@ public class User implements UserDetails {
     @Override
     public String getUsername() {
         return userId;
+    }
+
+    public String getUsername2() {
+        return userName;
     }
 
     @Override

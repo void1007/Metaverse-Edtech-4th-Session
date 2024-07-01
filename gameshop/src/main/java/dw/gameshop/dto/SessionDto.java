@@ -13,6 +13,6 @@ import java.util.Collection;
 @Getter
 @Setter
 public class SessionDto {
-    private String UserId;
+    private String userId;
     private Collection<? extends GrantedAuthority> authority;
 }

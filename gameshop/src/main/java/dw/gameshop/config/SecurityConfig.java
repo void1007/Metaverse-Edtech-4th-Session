@@ -30,15 +30,18 @@ public class SecurityConfig {
         return http
                 .authorizeRequests(auth -> auth
                         .requestMatchers(
-                                new AntPathRequestMatcher("/products/**"),
-                                new AntPathRequestMatcher("/user/login"),
-                                new AntPathRequestMatcher("/user/signup"),
-                                new AntPathRequestMatcher("/login"),
-                                new AntPathRequestMatcher("/logout"),
+                                new AntPathRequestMatcher("/api/products/**"),
+                                new AntPathRequestMatcher("/api/board/**"),
+                                new AntPathRequestMatcher("/api/user/login"),
+                                new AntPathRequestMatcher("/api/user/signup"),
                                 new AntPathRequestMatcher("/gameshop/**"),
+                                new AntPathRequestMatcher("/*"),
                                 new AntPathRequestMatcher("/css/**"),
-                                new AntPathRequestMatcher("/js/**")
+                                new AntPathRequestMatcher("/js/**"),
+                                new AntPathRequestMatcher("/img/**"),
+                                new AntPathRequestMatcher("/mp4/**")
                         ).permitAll()
+                        .requestMatchers("/uploads/**").denyAll()
                         .anyRequest().authenticated())
                 .formLogin(form->form.loginPage("/login").defaultSuccessUrl("/articles"))
                 .sessionManagement(session -> session
