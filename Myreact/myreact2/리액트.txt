@@ -1,0 +1,118 @@
+< 리액트 React >
+프론트엔드 프레임워크 4대장
+1. 리액트(React) - 45%
+2. 앵귤러(Angular) - 25%
+3. 뷰(Vue) -20%
+4. 스벨트(Svelte) - 10%
+
+* 런타임 환경이란?
+- 컴파일
+- 빌드
+- 배포 
+- 패키지 매니저
+등등 소프트웨어를 만들기 위한 언어의 개발 환경 묶음
+
+node -v
+
+npm -v
+
+npx create-react-app .
+
+npm start
+
+JSX의 등장!!
+: HTML과 유사한 구조의 태그를 이용한 스크립트 언어
+: 컴파일 과정에서 HTML로 변환됨!!
+
+<JSX의 기본 규칙>
+1. 컴포넌트 이름은 반드시 대문자로 시작
+2. 반드시 하나의 부모태그로 감싸져야 함
+: return 오른쪽 동일라인에 시작태그를 반드시 써줘야함
+: <></> 이름이 없는 empty tag를 사용해도 됨
+3. 모든 태그는 닫혀야 함
+4. 내부 Javascript 코드는 중괄호 {  } 안에 작성
+5. 클래스 속성은 이름이 className을 사용
+6. 인라인 스타일은 반드시 객체형태
+: 기존 css 속성이 '-' 를 가지면 CamelCase로 변환시킴
+: 예) background-color ==> backgroundColor
+7. 조건부 코드는 if문 대신 삼항연산자를 사용
+
+src
+    /Components
+        /20240722
+            /Test1.js
+            /Test2.js
+
+<문제점>
+: 리액트는 index.html만 사용하므로 모든 css 스타일이 
+index.html 에 복사됨. 클래스 이름이 중복되는 문제 발생!
+=> 리액트의 구조와 잘 어울리는 CSS 스타일링 기술이 필요!
+<해법>
+1. Styled-components
+2. CSS Modules
+3. CSS-in-JS
+4. Bootstrap
+5. Tailwind CSS
+
+<구조분해 할당 Destrucuring>
+1.객체의 구조분해할당
+user = {name:"Steve",email:"steve@email.com"};
+const{name} = user;
+
+2.배열의 구조분해할당
+colors = ["black","red","blue"];
+const [color0,color1,color2] = colors;
+
+function func1(value){
+    let number = 0;
+    function setNumber(newValue){
+        number = newValue;
+    }
+    return [number , setNumber];
+}
+
+const [number , setNumber] setter함수 = func1(10);
+setter함수(100);
+setter함수(200);
+
+-리액트 라이브러리가 내장하고 있는 후크의 종류
+1.useState
+=> 함수형 컴포넌트에서 상태(State)를 추가하고 관리할 수 
+있게 해주는 후크
+2.useEffect
+=> 함수형 컴포넌트에서 side effect (부수효과)를 수행하고
+자 할때 사용하는 후크
+==> 호출되는 시기가 중요!! 렌더링이 완료된 이후에 호출
+===> 의존성배열이 비어있으면??
+3.useContext
+4.useRef
+5.useReducer
+6.usecallback
+7.useMemo
+8.Use Transition(React 18+)
+....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
